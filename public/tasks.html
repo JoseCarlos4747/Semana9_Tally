@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis Tareas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container container-wide">
+    <div class="header">
+      <h1>📝 Mis Tareas</h1>
+      <button id="logoutBtn" class="btn btn-danger">Cerrar Sesión</button>
+    </div>
+
+    <form id="taskForm">
+      <input type="text" id="taskTitle" placeholder="Título de la tarea" required maxlength="255">
+      <input type="text" id="taskDesc" placeholder="Descripción (opcional)">
+      <button type="submit" class="btn btn-primary">➕ Agregar</button>
+    </form>
+
+    <ul id="taskList"></ul>
+    <div id="mensaje"></div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
